@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'navbar.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+    <p>Hahaha, You thought you would be going back to the
+        homepage, but actually here's a close up of our awesome logo!</p>
+    <img src="{% static 'fullstackexam/smell.jpg'%}" alt="Logo" style="width:50vw;height: 80vh">
+{% endblock %}

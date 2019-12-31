@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'navbar.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+
+<p>
+    The folks here at LetsPleaseMakeTheNewBuildingSmellGood&trade; co. are dedicated to cleanse the
+    STEM and Humanities of all bad odors. Like you, we became fed up after many days of coming into
+    class only to be forced to shield our noses. No More! Because unlike you, at
+    LetsPleaseMakeTheNewBuildingSmellGood&trade; co., we did something about it! So here it is, in all it's glory:
+    a website where instead of complaining about the bad smells, you can tell us about it, and the information
+    will be sent to directly to maintenance, making all of our noses the better for it! Following in the footsteps of tech giants
+    Microsoft, Apple, and Google, LetsPleaseMakeTheNewBuildingSmellGood&trade; co. sees an opportunity for unbelievable scalability
+    and we might just do it with your help! As they say, shoot for the moon. Even if you miss, you'll land in the stars!
+</p>
+
+<p>
+    Here is the key for ratings:
+
+</p>
+
+<table style="margin-left:30px;margin-right:30px;width:90%">
+  <tr>
+      <th>Rating</th>
+      <th>Explanation</th>
+
+  </tr>
+    <tr>
+        <td>Temperature = 0</td>
+        <td>Way too cold</td>
+    </tr>
+    <tr>
+        <td>Temperature = 10</td>
+        <td>Way too hot</td>
+    </tr>
+    <tr>
+        <td>Smell = 0</td>
+        <td>Smells good</td>
+    </tr>
+    <tr>
+        <td>Smell = 10</td>
+        <td>Smells horrible</td>
+    </tr>
+</table>
+
+{% endblock %}

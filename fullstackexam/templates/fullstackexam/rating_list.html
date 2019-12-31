@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'navbar.html' %}
 
-</body>
-</html>
+{% block content %}
+<table style="width:100%">
+  <tr>
+      <th>Time</th>
+      <th>Room</th>
+      <th>Category</th>
+      <th>Score</th>
+  </tr>
+    {% for thing in rating_list %}
+        <tr>
+            <td>{{ thing.timestamp }}</td>
+            <td>{{ thing.room }}</td>
+            <td>{{ thing.ratingCategory }}</td>
+            <td>{{ thing.score }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
